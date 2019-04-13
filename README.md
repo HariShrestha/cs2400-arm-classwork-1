@@ -8,15 +8,18 @@ Follow the instructions for each of the following code samples in [Compliler Exp
 
 1. [printf](https://godbolt.org/z/y2YKew)
    1. What is the library function that is called?
+   Answer: Negate function
    2. Research the implementation (source code) of this function.
    3. Find out if the program directly executes the output operation or it makes a *system call* to the operating system.
    
 2. [malloc](https://godbolt.org/z/kAZX7x)
    1. How are the arguments passed to `malloc` and `free`?
+   Answer: Argument are passed to the malloc and free if the information is too large.
    2. Research the implementation (source code) of `malloc` and `free`.
    
 3. [malloc array](https://godbolt.org/z/bBl0zx)
    1. How does this case differ from the previous one?
+   Answer; It is same as previous because both allocate to the malloc memory location
    2. [**hard**] Write your own tiny `malloc` library by declaring a large `FILL` area and writing a `malloc` and a `free` subroutines that manage allocations to that memory area. 
       1. `malloc` works approximately as follows:
          - it takes as argument the number of bytes requested
